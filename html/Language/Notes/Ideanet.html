@@ -1,0 +1,205 @@
+<html>
+	<head>
+		<title> Palace | Language</title>
+		<link rel="stylesheet" type="text/css" href="../../style_page.css">
+	</head>
+	<body>
+		<header>
+			<h1> <a href="..\..\index.html"> Palace</a> /<a href="../Gallery.html">Language</a> /Notes</h1>
+		</header>
+		
+		<aside>
+            <ul class="nav-area">
+                <li><h3>Topics:</h3></li>
+                <li class="list-effect-1"><a href="../../Art/Gallery.html">Art</a></li>
+                <li class="list-effect-1"><a href="../../Computation/Gallery.html">Computation</a></li>
+                <li class="list-effect-1"><a href="../../Language/Gallery.html">Language</a></li>
+                <li class="list-effect-1"><a href="../../Mathematics/Gallery.html">Mathematics</a></li>
+                <li class="list-effect-1"><a href="../../Music/Gallery.html">Music</a></li>
+                <li class="list-effect-1"><a href="../../Other/Gallery.html">Other</a></li>
+            </ul>
+			<ul class="nav-area-notes">
+				<li> <h3>Notes:</h3></li>
+				<li class="list-effect-1"><a href="Ideanet.html">Ideanet</a></li>
+				<li class="list-effect-1"><a href="Semiotics.html">Semiotics</a></li>
+			</ul>
+
+        </aside>
+		
+		<content>
+			
+			<p> Ideanet is the name I've given to the directed graph data structure I'm developing to store the conceptual information required to generate meaningful linguistic content. The following is a draft of the operational definition of the Ideanet.</p>
+
+			<p>'Information' is given to 'Ideanet' as input </p>
+            <p>'Information' is modeled as discrete spans of 'Text' </p>
+        
+        	<p> 'Ideanet' constructs 'Context' from 'Information' </p>
+            <p> 'Context' is a set of 'Primatives', and a set of 'Diagnostic Information' </p>
+            
+            <p> <ul>'Primative' is either:
+				<li>Base Case)      a 'Word' and a set of 'Relations'</li>
+                <li>Recursive Case) a set of 'Primatives' and a set of 'Relations'</li>
+			</ul></p>
+
+            <p> 'Relation' is a path between two 'Primatives' describing the way they relate to one another. </p>
+
+			<p> 'Word' is a span of text bordered on either end by the 'Space Character', and a set of 'Links' </p>
+            <p> '<a href="Link Grammar.html">Link</a>' is a token describing the grammatical role that some 'Word' plays in the 'Sentence' it came from </p>
+            <p> 'Sentence' is a span of 'Text' bordered on either end by a 'Punctuation'.</p>
+
+            <p> 'Diagnostic Information' is a set of key:value pairs descriptive of the 'Context' in which it is contained </p>
+
+			<p> 'Ideanet' generates 'Goal' from 'Context' and 'Identity' </p>
+			
+            <p> 'Identity' is the 'Centralized' 'Goal-Oriented Context' </p>
+
+            <p> 'Centralized' qualifies a certain 'Goal-Oriented Context' as the root of the 'Ideanet' </p>
+
+        	<p> 'Ideanet' constructs 'Goal-Oriented Context' from 'Context', 'Goal' </p>
+
+            <p> 'Goal-Oriented Context' is a 'Goal', a 'Context' that has been 'Organized' to the 'Goal', and a set of 'Diagnostic Information' </p>
+
+            <p> 'Goal' is an ideal state of the 'Ideanet', as informed by the 'Identity' </p>
+
+			<p> 'Organized' is the application of a 'Breadth First Search' Algorithm over the 'Context', with the root of said search being the 'Goal' </p> 
+
+			<p> Concepts that we make in our heads are informed by the goals that we have for thinking up these concepts in the first place. As such, it is imperative to concept formation that the context in which these concepts are made is organized to some goal. </p>
+					
+
+		<p>	The following are the different recognized 'Relations' that can exist between 'Primitives'. </p>
+
+				<ul>Dimensional Relations:
+						<li>D_B: Before in Time</li>
+						<li>D_A: After in Time</li>
+						<li>D_S: Simultaneous</li>
+						<li>D_N: Spatially Near</li>
+						<li>D_F: Spatially Far</li>
+						<li>D_O: Spatially Overlapping</li>
+				</ul>
+				<ul>Semantic Relations:
+						<li>S_C: Congruency</li>
+						<li>S_A: Antithesis</li>
+						<li>S_I: Heirarchical Includes</li>
+						<li>S_P: Heirarchical Peer</li>
+						<li>S_Q: Sequence</li>
+						<li>S_D: Details</li>
+				</ul>
+				<ul>Agency Relations:
+						<li>A_G: Goal</li>
+						<li>A_B: Belief</li>
+						<li>A_A: Affect</li>
+						<li>A_P: Possesses</li>
+						<li>A_X: Acts</li>
+						<li>A_S: Subject</li>
+				</ul>
+				<ul>Logical Relations:
+						<li>L_C: Would Cause</li>
+						<li>L_P: Would Prevent</li>
+						<li>L_F: Precondition For</li>
+						<li>L_A: Precondition Against</li>
+				</ul>
+				<ul>Causal Relations:
+						<li>C_M: Material</li>
+						<li>C_D: Design</li>
+						<li>C_E: Efficient</li>
+						<li>C_F: Final</li>
+				</ul>
+				
+					<p>These relations are used in the following way:</p>
+				
+					<p>(hunger --SD--> ACTOR) --PF-> (starving --SD--> ACTOR) --PF-> (dead --SD--> ACTOR)</p>
+				
+					<p>This expression, when evaluated by the actor, would give the actor a reason to avoid hunger, because hunger leads to starvation which leads to death. And death is bad (citation needed).</p>
+				
+					<P>Then, the addition of Actor Relations add those relations brought on by intelligence. Intelligences are capable of having a subjectivity opposing objectivity, and thus, are capable of a host of complex conceptual relations, such as the relations of action and subjection. A river does not act by flowing, but, for our purposes, an entity acts to paddle down it. </p>
+				
+					<p>Finally relations regarding spatial and temporal dimensionality are given. </p>
+				
+					<p> Aristotle has four causes, four ways to represent why things change, which I took as the causal relations</p>
+				
+					<ul>
+						<li>Material Cause: aspect of change brought about by the material of the thing: "Why did the table give me a splinter? Because it is wooden."</li>
+						<li>Formal Cause: aspect of change brought about by the arrangement of the thing: "Why did the table collapse when I sat? Because it is missing a leg."</li>
+						<li>Efficient Cause: aspect of change brought about by other conspiring forces: "Why is the table here? Because a carpenter made it and put it there."</li>
+						<li>Final Cause: aspect of change brought about by the final state of the thing "Why is the table here? Because I want to set things on it."</li>
+					</ul>
+					<ul>
+					The house is painted green:
+						<li>Material: The pigment in the paint spread over the house causes a green color</li>
+						<li>Formal: The sun shines light, reflecting off the house and falling on eyes.</li>
+						<li>Efficient: The painter was paid to paint the house</li>
+						<li>Final: Chris likes the color green, and wanted the house to be as such.</li>
+					</ul>
+
+					<p> Still need to format the following</p>
+
+				Definitions:
+				
+					Definitions can be thought of as having general, specific, relational parts
+				
+					The word 'mean' can mean:
+						linguistically equivalent
+						practically identifiable
+				
+				Modeling Context
+				
+					Giving modifiers to links in Ideanet:
+						Necessary - this link is viable in every context
+						Possible - this link is viable in some contexts
+						Defeasible - this link is arguable (adding more information might defeat the link)
+							\\Should this then connect to some clause that, if true, would defeat the link?
+				
+					Giving modifiers to links in an actors Ideanet:
+						Normative - this link is interesting to the actor
+					
+					Giving modifiers to nodes in Ideanet:
+						Specific - this node refers to an instantiation of form
+							\\Should specific nodes then have a unique label by which they can be known?
+						General - this node refers to the form
+				
+				
+				Design Ideanet Multi-Network system
+					Self-balancing tree system of Ideanet networks
+					Leaf nodes are generated from new interactions/texts
+					Similarities between leaves are pulled up and placed in root networks
+					Thus leaves are specifics and roots are general
+				
+				What would it mean to say similarities between two networks are isolated? 
+				
+					In one network, The following relations exist:
+						
+						(ACTOR --AP-> friend) --PF-> (happy --SD-> ACTOR)
+				
+					In another, the following relations exist:
+						
+						ACTOR --CF-> (happy --SD-> ACTOR)
+				
+					The similarity between these two would be that 'happy' can describe 'ACTOR'. As such, this similarity would be drawn up from these two and placed in a super network.
+						
+				
+				Organizing and Storing Terms:
+				
+					As of now, terms are stored by the combination letters that make them up. This means that duplicate words, or words that are spelled the same but have different meanings, are indistinguishable by the system. Perhaps a better means of organizing these terms would be to organize them by both their spellings and their LG disjuncts.
+				
+					This system would look like:
+				
+						string name = "Love";
+						int* disj = [0,0,...,1,0,...-1,0];
+				
+							//0 = disjunct not present
+							//1 = disjunct present, connects right
+							//-1 = disjunct present, connects left
+				
+					Then, an existing term would only be added onto if the disjunct lists mach exactly. 
+				
+					This would lead to much duplication of terms that might mean the same thing, but this strikes me as an easier problem to solve than the problem of multiple meanings crowding the same term. 
+				
+					So then, if terms were delineated by their disjuncts, a system would be required that would examine words of the same spelling but different disjuncts, and see if their conceptual relations map to similar enough places that these words could be combined. 
+					
+			</p>
+
+
+
+		</content>
+	</body>
+</html>
